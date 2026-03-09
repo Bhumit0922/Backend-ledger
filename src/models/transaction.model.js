@@ -39,3 +39,7 @@ const transactionSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
+
+const transactionModel =mongoose.model("transaction", transactionSchema)
+
+moodule.exports = transactionModel
